@@ -1,0 +1,281 @@
+        @import url('https://fonts.googleapis.com/css2?family=Lora:ital@1&display=swap');
+
+        html,  body{
+            height: 100%;
+            width: 100%;
+            font-family:  'Lora, serif';
+            color: #222;
+            
+        }
+        .navbar{
+            padding: .8rem;
+        }
+        .navbar-nav li{
+            padding-right: 20px;
+            
+        }
+        .nav-link{
+            font-size: 1.1em !important;
+            color:deeppink;
+        }
+        .carousel-inner img{
+            width: 100%;
+            height: 100%;
+        }
+            .section {
+
+                padding:50px 0;
+            }
+            .section  h2{
+                padding: 0;
+                margin:0;
+                font-size: 35px;
+                color: black;
+                text-shadow: 2px 2px;
+            }
+            .section .i{
+
+                font-size: 50px;
+            }
+            .section p{
+                font-size: 20px;
+            }
+                        .section img{
+                width:100%;
+            }
+
+           .btn-outline-secondary{
+            background-color: transparent;
+            border:4px solid purple;
+            text-decoration-color: black;
+           }
+        .carousel-caption{
+            position: absolute;
+            top: 50%;
+            transform:translateY(-50%) ;
+            font-family: 'Goldman, cursive';
+            color: deeppink;
+            font-size: xx-large;
+        }
+        .carousel-caption h1{
+            font-size: 300%;
+            text-transform: uppercase;
+            text-shadow: 2px 2px 10px deeppink;
+            color:black;
+        }
+
+            .carousel-caption h3{
+                font-size: 200%;
+                font-weight: 500;
+                text-shadow: 1px 1px 10px black;
+                padding-bottom: 1rem;
+            }
+            .btn-primary{
+                background-color: purple;
+                border:1px solid magenta;
+            }
+            
+            .btn-primary:hover{
+                background-color: magenta;
+                border:1px solid purple;
+            }
+            .img{
+                opacity: 0.7;
+            }
+
+            
+            .padding{
+                padding-bottom: 2rem;
+            }
+            .welcome{
+                width: 75%;
+                margin: 0 auto;
+                padding-top: 2rem;
+                
+            }
+             .welcome hr{
+                 border-top:2px solid mediumvioletred;
+                 width:95%;
+                 margin-top: .3rem;
+                 margin-bottom: 1rem;
+
+             }
+
+        .welcome h1{
+           
+            color:black;
+            text-shadow:2px 2px deeppink;
+        }
+        .fa-paint-brush{
+            color: red;
+           
+        }
+        .fa-star{
+            color:tomato;
+        }
+        .fa-bed{
+            color:darkmagenta
+        }
+        .fa-eye{
+            color:deeppink
+        }
+        .fa-bullhorn{
+            color:mediumblue
+        }
+        .container-fluid h2{
+            color: darkmagenta;
+            text-shadow: 2px 2px deeppink;
+            font-size: 50px;
+        }
+        .container-fluid p{
+            font-size: 20px;
+        }
+        .container-fluid .ale{
+            border-top:2px solid mediumvioletred;
+                 width:95%;
+                 margin-top: .3rem;
+                 margin-bottom: 1rem;
+        }
+
+        .fa-paint-brush,.fa-star,.fa-eye,.fa-bed,.fa-bullhorn{
+            font-size:4em;
+            margin: 1rem;
+
+        }
+        .fun{
+            width:100%;
+            margin-bottom: 2rem;
+            color: black;
+            background-color:tomato;
+
+        }
+         
+        .gif{
+            max-width: 100%;
+        }
+
+
+
+        .fa-facebook{
+            color:blue;
+            font-size: 5em;
+          
+        }
+
+        .fa-instagram{
+        color:purple;
+        font-size: 5em;
+        }
+
+        .fa-whatsapp{
+            color:limegreen;
+            font-size: 5em;
+          }
+
+        .foo{
+            background-color:mediumpurple;
+            color:oldlace;
+            padding-top: 2rem;
+        }
+        .foo h5{
+            background-color:mediumvioletred;
+            color:oldlace ;
+        }
+        /*--Media Queries--*/
+        @media (max-width:992px){
+        .social a{
+            font-size:4em;
+            padding: 2rem;
+        }
+        }
+        @media(max-width:768px){
+        .carousel-caption{
+            
+            top: 45%;
+            
+        }
+        .carousel-caption h1{
+            font-size: 350%;
+            
+        }
+
+            .carousel-caption h3{
+                font-size: 120%;
+                font-weight: 400;
+               padding-bottom: .2rem;
+            }
+            .carousel-caption .btn{
+                font-size: 95%
+                padding:8px 14px;
+
+            }
+            .display-4{
+                font-size:200%;
+            }
+            .social a{
+            font-size:2.5em;
+            padding: 1.2rem;
+        }
+        }
+        @media(max-width:576px){
+            .carousel-caption{
+            
+            top: 40%;
+            
+        }
+        .carousel-caption h1{
+            font-size: 250%;
+            
+        }
+
+            .carousel-caption h3{
+                font-size: 110%;
+                
+            }
+            .carousel-caption .btn{
+                font-size: 90%
+                padding:4px 8px;
+
+            }
+            .carousel-indicators{
+                display: none;
+            }
+            .display-4{
+                font-size:160%;
+            }
+            .social a{
+            font-size:2em;
+            padding: .7rem;
+        }
+        }
+
+        /*---Firefox bug fix--*/
+        .carousel-item{
+            transition: -webkit- transform 0.5s ease;
+            transition: transform 0.5s ease;
+            transition: transform 0.5s ease,-webkit- transform 0.5s ease;
+            -webkit-backface-visibility:visible;
+            backface-visibility:visible;
+        } 
+
+
+
+          
+
+
+/*
+    Extra small(xs) devices(portrait phones, less than 576px)
+    No media query since this is the default in Bootstrap
+
+    Small(sm) devices(landcape phones, 576px and up)
+    @media(min-width:576px)  { ... }
+
+    Medium(md) devices(tablets, 768px and up)
+    @media(min-width:768px) { ... }
+
+    Large(lg) devices(desktops, 992px and up)
+    @media(min-width:992px) { ... }
+
+    Extra(xl) large devices(large desktops, 1200px and up)
+    @media(min-width:1200px) { ... }
+    */
